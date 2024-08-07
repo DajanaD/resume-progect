@@ -1,0 +1,69 @@
+body {
+    background-image: url("background-2.png");
+    background-size: cover; /* Фон занимает всю площадь контейнера */
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 5%; /* Относительные единицы для адаптивности */
+    font-family: "Montserrat", sans-serif;
+    font-size: 11pt;
+  }
+  
+  .wraper {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Позволяет элементам переходить на новую строку */
+  }
+  
+  .main_content, .main, .projects, .experience, .education, .e-3, .e-2, .e-1 {
+    padding: 2%; /* Относительные единицы для адаптивности */
+    box-sizing: border-box;
+    width: 100%; /* Делаем блоки на всю ширину */
+  }
+  
+  .sidebar {
+    background: #E0EBFE;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+    width: 100%; /* Делаем блок на всю ширину */
+  }
+  .sidebar-photo{
+    width: 100%;
+  }
+  .sidebar-content, .contacts, .t-s {
+    padding: 2%;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+  }
+  
+  
+  /* Медиазапросы для различных размеров экранов */
+  @media (min-width: 768px) {
+    .wraper {
+      flex-direction: row;
+    }
+    .main_content, .main, .projects, .experience, .education, .sidebar {
+      width: 48%; /* Две колонки по 50% минус отступы */
+    }
+    .sidebar-content, .contacts, .t-s {
+      padding: 5%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .main_content, .main, .projects, .experience, .education {
+      width: 70%; /* Основной контент 70% */
+    }
+    .sidebar {
+      width: 28%; /* Сайдбар 30% минус отступы */
+    }
+    .sidebar-content, .contacts, .t-s {
+      padding: 10%;
+    }
+  }
+  
