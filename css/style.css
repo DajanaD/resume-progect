@@ -26,10 +26,15 @@ body {
     padding-top: 2%;
     padding-bottom: 2%;
     box-sizing: border-box;
-    width: 100%; /* Делаем блок на всю ширину */
+    width: 100%; /* Робимо блок на всю ширину */
+    order: 1; /* Додаємо порядок для сайдбару */
+    text-align: center; /* Вирівнювання вмісту по центру */
   }
-  .sidebar-photo{
-    width: 100%;
+  
+  .sidebar-photo {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
   }
   .sidebar-content, .contacts, .t-s {
     padding: 2%;
