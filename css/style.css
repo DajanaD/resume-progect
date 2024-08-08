@@ -45,7 +45,7 @@ body {
   /* Медиазапросы для различных размеров экранов */
   @media (min-width: 768px) {
     .wraper {
-      flex-direction: row;
+      flex-direction: row-reverse;
     }
     .main_content, .main, .projects, .experience, .education, .sidebar {
       width: 48%; /* Две колонки по 50% минус отступы */
