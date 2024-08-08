@@ -11,7 +11,7 @@ body {
   .wraper {
     background: #ffffff;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap; /* Позволяет элементам переходить на новую строку */
   }
   
