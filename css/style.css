@@ -28,15 +28,28 @@ body {
     box-sizing: border-box;
     width: 100%; /* Робимо блок на всю ширину */
     order: 1; /* Додаємо порядок для сайдбару */
-    text-align: center; /* Вирівнювання вмісту по центру */
+     /* Вирівнювання вмісту по центру */
   }
   
   .sidebar-photo {
     width: 70%;
+    text-align: center;
     display: block;
     margin: 0 auto;
   }
-  .sidebar-content, .contacts, .t-s {
+  ol {
+    list-style: none;
+    padding-left: 10px;
+  }
+  ul {
+    list-style-type: '✔';
+    padding-left: 0; /* Видаляємо відступи у списку */
+    margin-left: 0;
+  }
+  li{
+    padding-left: 15px;
+  }
+  .sidebar-content, .contacts, .t-s, .s-s, .Languages {
     padding: 2%;
     box-sizing: border-box;
   }
@@ -67,7 +80,7 @@ body {
     .sidebar {
       width: 28%; /* Сайдбар 30% минус отступы */
     }
-    .sidebar-content, .contacts, .t-s {
+    .sidebar-content, .contacts, .t-s, .s-s, .Languages {
       padding: 10%;
     }
   }
