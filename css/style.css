@@ -1,87 +1,147 @@
 body {
     background-image: url("background-2.png");
-    background-size: cover; /* Фон занимает всю площадь контейнера */
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    padding: 5%; /* Относительные единицы для адаптивности */
+    padding: 5%;
     font-family: "Montserrat", sans-serif;
     font-size: 11pt;
-  }
-  
-  .wraper {
+}
+
+.wraper{
     background: #ffffff;
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap; /* Позволяет элементам переходить на новую строку */
-  }
-  
-  .main_content, .main, .projects, .experience, .education, .e-3, .e-2, .e-1 {
-    padding: 2%; /* Относительные единицы для адаптивности */
+    flex-wrap: wrap;
+}
+
+.main_content, .main, .projects, .experience, .education, .e-3, .e-2, .e-1 {
+    padding: 2%;
     box-sizing: border-box;
-    width: 100%; /* Делаем блоки на всю ширину */
-  }
-  
-  .sidebar {
+    width: 100%;
+}
+
+.sidebar {
     background: #E0EBFE;
     padding-top: 2%;
     padding-bottom: 2%;
     box-sizing: border-box;
-    width: 100%; /* Робимо блок на всю ширину */
-    order: 1; /* Додаємо порядок для сайдбару */
-     /* Вирівнювання вмісту по центру */
-  }
-  
-  .sidebar-photo {
+    width: 100%;
+    order: 1;
+}
+
+.sidebar-photo {
     width: 70%;
     text-align: center;
     display: block;
     margin: 0 auto;
-  }
-  ol {
+}
+
+ol {
     list-style: none;
     padding-left: 10px;
-  }
-  ul {
-    list-style-type: '✔';
-    padding-left: 0; /* Видаляємо відступи у списку */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
     margin-left: 0;
-  }
-  li{
+}
+
+li {
     padding-left: 15px;
-  }
-  .sidebar-content, .contacts, .t-s, .s-s, .Languages {
+    padding-top: 10px;
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Центрируем элементы по вертикали */
+    
+  
+}
+
+.sidebar-content, .contacts, .t-s, .s-s, .Languages {
     padding: 2%;
     box-sizing: border-box;
-  }
-  
-  h1, h2, h3, h4 {
+}
+.sidebar-icon{
+  height: 30px;
+  width: 30px;
+}
+
+h1, h2, h3, h4 {
     font-family: 'Georgia', serif;
     font-weight: bold;
-  }
-  
-  
-  /* Медиазапросы для различных размеров экранов */
-  @media (min-width: 768px) {
+}
+
+/* Media queries for different screen sizes */
+@media (min-width: 768px) {
     .wraper {
-      flex-direction: row-reverse;
+        flex-direction: row-reverse;
     }
     .main_content, .main, .projects, .experience, .education, .sidebar {
-      width: 48%; /* Две колонки по 50% минус отступы */
+        width: 48%;
     }
     .sidebar-content, .contacts, .t-s {
-      padding: 5%;
+        padding: 5%;
     }
-  }
-  
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     .main_content, .main, .projects, .experience, .education {
-      width: 70%; /* Основной контент 70% */
+        width: 70%;
     }
     .sidebar {
-      width: 28%; /* Сайдбар 30% минус отступы */
+        width: 28%;
     }
     .sidebar-content, .contacts, .t-s, .s-s, .Languages {
-      padding: 10%;
+        padding: 10%;
     }
-  }
-  
+}
+
+.binary-view {
+    display: none;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+.text-view {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    margin: 0;
+    display: inline;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.small-button {
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.small-button:hover {
+    background-color: #0056b3;
+}
+/* .binary-view {
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.text-view {
+  display: none; 
+} */
