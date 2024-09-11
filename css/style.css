@@ -14,7 +14,9 @@ body {
     flex-direction: row-reverse;
     flex-wrap: wrap; /* Позволяет элементам переходить на новую строку */
   }
-  
+  p{
+    font-size: 12pt;
+  }
   .main_content, .main, .projects, .experience, .education, .e-3, .e-2, .e-1 {
     padding: 2%; /* Относительные единицы для адаптивности */
     box-sizing: border-box;
@@ -42,18 +44,31 @@ body {
     padding-left: 10px;
   }
   ul {
-    list-style-type: '✔';
+    list-style-type: none;
     padding-left: 0; /* Видаляємо відступи у списку */
     margin-left: 0;
   }
+  .exp{
+    list-style-type: '✔';
+  }
   li{
     padding-left: 15px;
+    font-size: 15pt;
   }
   .sidebar-content, .contacts, .t-s, .s-s, .Languages {
     padding: 2%;
     box-sizing: border-box;
   }
-  
+  .sidebar-icon{
+    height: 25px;
+    width: 25px;
+    padding-right: 15px;
+  }
+  .contacts-icon{
+    height: 30px;
+    width: 30px;
+    padding-right: 15px;
+  }
   h1, h2, h3, h4 {
     font-family: 'Georgia', serif;
     font-weight: bold;
