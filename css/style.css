@@ -73,7 +73,10 @@ body {
     font-family: 'Georgia', serif;
     font-weight: bold;
   }
-  
+  .soft_skil{
+    height: 80px;
+    width: 80px;
+  }
   
   /* Медиазапросы для различных размеров экранов */
   @media (min-width: 768px) {
