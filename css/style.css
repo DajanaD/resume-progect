@@ -55,7 +55,7 @@ body {
     padding-left: 15px;
     font-size: 15pt;
   }
-  .sidebar-content, .contacts, .t-s, .s-s, .Languages {
+  .sidebar-content, .contacts, .t-s, .Languages {
     padding: 2%;
     box-sizing: border-box;
   }
@@ -63,19 +63,25 @@ body {
     height: 25px;
     width: 25px;
     padding-right: 15px;
+    
   }
   .contacts-icon{
     height: 30px;
     width: 30px;
-    padding-right: 15px;
+    margin: 16px;
   }
   h1, h2, h3, h4 {
     font-family: 'Georgia', serif;
     font-weight: bold;
   }
+  .soft_icon, .contacts_{
+    display: flex;
+    flex-wrap: wrap;
+  }
   .soft_skil{
-    height: 80px;
-    width: 80px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px;
   }
   
   /* Медиазапросы для различных размеров экранов */
