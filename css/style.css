@@ -1,8 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
     background-image: url("background-2.png");
     background-size: cover; /* Фон занимает всю площадь контейнера */
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
     padding: 5%; /* Относительные единицы для адаптивности */
     font-family: "Montserrat", sans-serif;
     font-size: 11pt;
@@ -18,7 +23,7 @@ body {
     font-size: 12pt;
   }
   .main_content, .main, .projects, .experience, .education, .e-3, .e-2, .e-1 {
-    padding: 2%; /* Относительные единицы для адаптивности */
+    padding: 4%; /* Относительные единицы для адаптивности */
     box-sizing: border-box;
     width: 100%; /* Делаем блоки на всю ширину */
   }
@@ -91,7 +96,7 @@ body {
     .wraper {
       flex-direction: row-reverse;
     }
-    .main_content, .main, .projects, .experience, .education, .sidebar {
+    .main_content {
       width: 48%; /* Две колонки по 50% минус отступы */
     }
     .sidebar-content, .contacts, .t-s {
@@ -100,7 +105,7 @@ body {
   }
   
   @media (min-width: 1024px) {
-    .main_content, .main, .projects, .experience, .education {
+    .main_content {
       width: 70%; /* Основной контент 70% */
     }
     .sidebar {
