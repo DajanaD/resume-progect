@@ -80,6 +80,7 @@ body {
     flex-wrap: wrap;
   }
   .soft_skil{
+    height: 100px;
     width: 100px;
     border-radius: 50%;
     padding: 5px;
