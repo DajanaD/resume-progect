@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     display: flex;
-    padding: 5%; /* Относительные единицы для адаптивности */
+    padding: 3%; /* Относительные единицы для адаптивности */
     font-family: "Montserrat", sans-serif;
     font-size: 11pt;
   }
@@ -112,7 +112,7 @@ body {
       width: 70%; /* Основной контент 70% */
     }
     .sidebar {
-      width: 28%; /* Сайдбар 30% минус отступы */
+      width: 30%; /* Сайдбар 30% минус отступы */
     }
     .sidebar-content, .contacts, .t-s, .s-s, .Languages {
       padding: 10%;
