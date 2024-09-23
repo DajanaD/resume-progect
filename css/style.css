@@ -25,7 +25,7 @@ body {
   p{
     font-size: 12pt;
   }
-  .main_content, .main, .projects, .experience, .education, .e-3, .e-2, .e-1 {
+  .main_content, .main, .projects, .experience, .education{
     padding: 4%; /* Относительные единицы для адаптивности */
     box-sizing: border-box;
     width: 100%; /* Делаем блоки на всю ширину */
